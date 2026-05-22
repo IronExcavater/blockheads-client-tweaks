@@ -35,7 +35,7 @@ jobs:
           cache-read-only: ${{ github.ref != 'refs/heads/main' }}
 
       - name: Build
-        run: ./gradlew build
+        run: chmod +x gradlew && ./gradlew build
 
       - name: Upload mod jar
         uses: actions/upload-artifact@v4
