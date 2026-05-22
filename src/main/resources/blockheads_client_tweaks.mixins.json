@@ -1,0 +1,11 @@
+{
+  "required": true,
+  "package": "com.theblockheads.clienttweaks.mixin",
+  "compatibilityLevel": "JAVA_25",
+  "client": [
+    "CreativeModeInventoryScreenMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
