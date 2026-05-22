@@ -1,8 +1,17 @@
 # Java — https://github.com/github/gitignore/blob/main/Java.gitignore
+# Compiled class file
 *.class
+
+# Log file
 *.log
+
+# BlueJ files
 *.ctxt
+
+# Mobile Tools for Java (J2ME)
 .mtj.tmp/
+
+# Package Files #
 *.jar
 *.war
 *.nar
@@ -10,6 +19,8 @@
 *.zip
 *.tar.gz
 *.rar
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 replay_pid*
 
@@ -17,14 +28,38 @@ replay_pid*
 .gradle
 **/build/
 !**/src/**/build/
+
+# Ignore Gradle GUI config
 gradle-app.setting
+
+# Avoid ignoring Gradle wrapper jar file (.jar files are usually ignored)
 !gradle-wrapper.jar
+
+# Avoid ignore Gradle wrapper properties
 !gradle-wrapper.properties
+
+# Cache of project
 .gradletasknamecache
+
+# Eclipse Gradle plugin generated files
+# Eclipse Core
 .project
+# JDT-specific (Eclipse Java Development Tools)
 .classpath
 
 # Fabric / Minecraft
 run/
 .mixin.out/
 remappedSrc/
+
+# Visual Studio cache directory
+.vs/
+
+# Visual Studio Code cache directory
+.vscode/
+
+# JetBrains cache directory
+.idea/
+
+# MacOS folder file
+.DS_Store
