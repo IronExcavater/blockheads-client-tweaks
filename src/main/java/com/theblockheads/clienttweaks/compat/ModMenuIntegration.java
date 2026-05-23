@@ -21,12 +21,15 @@ public class ModMenuIntegration implements ModMenuApi {
 				.addEntry(builder.entryBuilder()
 					.startIntSlider(
 						Component.literal("Creative Search Box Width"),
-						ClientTweaks.CONFIG.creativeSearchWidth, 0, 200)
+						ClientTweaks.CONFIG.creativeSearchWidth,
+						ClientTweaksConfig.MIN_WIDTH,
+						ClientTweaksConfig.MAX_WIDTH)
 					.setDefaultValue(ClientTweaksConfig.DEFAULT_WIDTH)
 					.setTextGetter(val -> val == ClientTweaksConfig.VANILLA_WIDTH
-						? Component.literal("Vanilla")
+						? Component.literal("Vanilla (" + val + " px)")
 						: Component.literal(val + " px"))
-					.setTooltip(Component.literal("Width of the creative search box. Set to Vanilla to disable."))
+					.setTooltip(Component.literal(
+						"Width of the creative search box. Vanilla = " + ClientTweaksConfig.VANILLA_WIDTH + " px."))
 					.setSaveConsumer(val -> ClientTweaks.CONFIG.creativeSearchWidth = val)
 					.build());
 
