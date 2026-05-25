@@ -3,7 +3,10 @@
   "package": "com.theblockheads.clienttweaks.mixin",
   "compatibilityLevel": "JAVA_25",
   "client": [
-    "CreativeModeInventoryScreenMixin"
+    "ArmorTooltipWidthMixin",
+    "CreativeModeInventoryScreenMixin",
+    "LullabyEnchantmentTooltipMixin",
+    "ToolTrimsTemplateTooltipMixin"
   ],
   "injectors": {
     "defaultRequire": 1
